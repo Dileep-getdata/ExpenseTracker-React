@@ -1,0 +1,17 @@
+.expenses-list{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    background-color:gray;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.ammount-btn{
+    display: flex;
+    align-items:center;
+    background-color: brown;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}

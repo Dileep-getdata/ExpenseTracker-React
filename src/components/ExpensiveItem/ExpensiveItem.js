@@ -1,19 +1,16 @@
-function ExpensiveItem({ title, ammount }) {
-  const expense = [
-    { title: "food", ammount: 10 },
-    { title: "petrole", ammount: 100 },
-  ];
+import "./ExpensiveTracker.css";
+
+function ExpensiveItem(props) {
   return (
     <div>
-      <div>
-        {expense.map((each) => {
-          return (
-            <div>
-              <h3>{each.title}</h3>
-              <div>RS:{each.ammount}</div>
-            </div>
-          );
-        })}
+      <div className="expenses-list">
+        <h3>
+          {props.date.getFullYear()}-{props.date.getMonth()}-
+          {props.date.getDate()}
+        </h3>
+        <h3>{props.LocationOfExpenditure}</h3>
+        <h3>{props.title}</h3>
+        <div className="ammount-btn">RS:{props.ammount}</div>
       </div>
     </div>
   );
