@@ -1,14 +1,15 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import Card from "./components/card/Card";
 
 import ExpensiveItem from "./components/ExpensiveItem/ExpensiveItem";
 
 function App() {
   return (
-    <div>
+    <Card>
       <h2>Expensive Tracker</h2>
       <ExpensiveItem />
-    </div>
+    </Card>
   );
 }
 

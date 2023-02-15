@@ -1,11 +1,12 @@
 import "./ExpensiveDate.css";
+import Card from "../card/Card";
 function ExpenseDate(props) {
   return (
-    <div className="date-list">
+    <Card className="date-list">
       <div>{props.date.toLocaleString("en-US", { month: "long" })}</div>
       <div>{props.date.toLocaleString("en-US", { day: "2-digit" })}</div>
       <div>{props.date.getFullYear()}</div>
-    </div>
+    </Card>
   );
 }
 export default ExpenseDate;
