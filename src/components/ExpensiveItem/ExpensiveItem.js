@@ -1,4 +1,5 @@
 import "./ExpensiveTracker.css";
+import ExpenseDate from "./ExpenseDate";
 
 function ExpensiveItem(props) {
   const expense = [
@@ -19,10 +20,7 @@ function ExpensiveItem(props) {
     <div>
       {expense.map((each) => (
         <div className="expenses-list">
-          <h3>
-            {each.date.getFullYear()}-{each.date.getMonth()}-
-            {each.date.getDate()}
-          </h3>
+          <ExpenseDate date={each.date} />
           <h3>{each.LocationOfExpenditure}</h3>
           <h3>{each.title}</h3>
           <div className="ammount-btn">RS:{each.ammount}</div>
