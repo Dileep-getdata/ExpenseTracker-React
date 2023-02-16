@@ -1,3 +1,4 @@
+import React from "react";
 import "./ExpensiveTracker.css";
 import ExpenseDate from "./ExpenseDate";
 import Card from "../card/Card";
@@ -16,9 +17,15 @@ const ExpensiveItem = (props) => {
       date: new Date(),
       LocationOfExpenditure: "KPHB",
     },
+    {
+      title: "petrole",
+      ammount: 100,
+      date: new Date(),
+      LocationOfExpenditure: "KPHB",
+    },
   ];
   return (
-    <div>
+    <Card className="expense-container">
       {expense.map((each) => (
         <Card className="expenses-list">
           <ExpenseDate date={each.date} />
@@ -27,7 +34,7 @@ const ExpensiveItem = (props) => {
           <Card className="ammount-btn">RS:{each.ammount}</Card>
         </Card>
       ))}
-    </div>
+    </Card>
   );
 };
 export default ExpensiveItem;

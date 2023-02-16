@@ -1,3 +1,4 @@
+import React from "react";
 import "./ExpensiveDate.css";
 import Card from "../card/Card";
 const ExpenseDate = (props) => {
