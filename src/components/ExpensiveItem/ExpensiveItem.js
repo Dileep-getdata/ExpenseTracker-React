@@ -2,7 +2,7 @@ import "./ExpensiveTracker.css";
 import ExpenseDate from "./ExpenseDate";
 import Card from "../card/Card";
 
-function ExpensiveItem(props) {
+const ExpensiveItem = (props) => {
   const expense = [
     {
       title: "food",
@@ -29,5 +29,5 @@ function ExpensiveItem(props) {
       ))}
     </div>
   );
-}
+};
 export default ExpensiveItem;

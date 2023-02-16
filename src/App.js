@@ -4,13 +4,13 @@ import Card from "./components/card/Card";
 
 import ExpensiveItem from "./components/ExpensiveItem/ExpensiveItem";
 
-function App() {
+const App = () => {
   return (
     <Card>
       <h2>Expensive Tracker</h2>
       <ExpensiveItem />
     </Card>
   );
-}
+};
 
 export default App;
