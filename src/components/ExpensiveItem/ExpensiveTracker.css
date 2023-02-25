@@ -1,11 +1,4 @@
-.expense-container{
-    background-color: black;
-    text-align: center;
-    padding: 10px;
-    width: 70vw;
-    margin-left: 40px;
-    
-}
+
 .expenses-list{
     display: flex;
     justify-content:space-around;
