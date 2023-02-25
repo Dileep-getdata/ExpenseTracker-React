@@ -2,6 +2,7 @@
 import React from "react";
 import "./App.css";
 import Card from "./components/card/Card";
+import ExpenseForm from "./components/ExpenseForm/ExpenseForm";
 
 import ExpensiveItem from "./components/ExpensiveItem/ExpensiveItem";
 
@@ -29,6 +30,9 @@ const App = () => {
   return (
     <Card className="container">
       <h2>Expensive Tracker</h2>
+
+      <ExpenseForm />
+
       <Card className="expense-container">
         <ExpensiveItem
           title={expense[0].title}
